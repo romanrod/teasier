@@ -25,7 +25,12 @@ Or manually:
 
 If you work closely with dev team, you have to ask for an attribute of data-something like.
 
-Suppose you have a field where you have to type some name, the html should have an attribute like data-something="name" and that is enough to write automation code
+Suppose you have a field where you have to type some name, the html should have an attribute like data-something="name" and that is enough to write automation code.
+
+If you cannot modify html or devs reuse to do it, you can use the value for other attributes.
+Teasier will try to find elements by :id, :data_x, :name, :placeholder or :text if possible.
+If you want to add another way of search you can do it by adding it to search criteria with :add_search_attribute
+
 
 ```ruby
 require 'teasier'
